@@ -20,13 +20,11 @@
 
     'depends': [
         'base',
-        'openeducat_core',
+        'web',
         'website',
         'website_form',
-        'openeducat_admission',
         'website_partner',
         'website_mail',
-        'hr'
     ],
 
     'demo': [],
@@ -36,23 +34,7 @@
         'views/formulario_registro_empresas_view.xml',
         'data/website_data.xml',
         'views/vista_empresa.xml',
-        #'views/carrera_view.xml',
-        #'views/facultades_view.xml',
-        #'views/niveleducativo_view.xml',
-        #'views/planestudios_view.xml',
-        #'views/areas_view.xml',
-        #'views/company_data_edit_view.xml',
-        #'security/ops4g_security.xml',
         'security/ir.model.access.csv',
-        #'views/turnos_view.xml',
-        #'views/periodos_view.xml',
-        #'data/periodo_consecutivo.xml',
-        #'demo/areas_demo.xml',
-        #'demo/facultades_demo.xml',
-        #'demo/niveleseducativos_demo.xml',
-        #'demo/periodos_demo.xml',
-        #'demo/carreras_demo.xml',
-        #'demo/turnos_demo.xml',
     ],
 
     'installable':True,
