@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!--  form view /////////////////////////////////////////////////////-->
+    <record model="ir.ui.view" id="umc_empresa_form_view">
+        <field name="name">empresa.form.view</field>
+        <field name="model">empresa_inherit</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <!--field name="state" widget="statusbar" /-->
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box"></div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group>
+                        
+                    </group>
+                </sheet>
+                
+            </form>
+        </field>
+    </record>
+    <!--  tree view /////////////////////////////////////////////////////-->
+    <record model="ir.ui.view" id="umc_empresa_tree_view">
+        <field name="name">empresa.tree.view</field>
+        <field name="model">empresa_inherit</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+    <!--Agrgar filtros de busqueda -->
+    <record model="ir.ui.view" id="empresa_search_view">
+        <field name="name">empresa.search.view</field>
+        <field name="model">empresa_inherit</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <!--filter name="my_courses" string="My Courses" domain="[('responsible_id', '=', uid)]"/-->
+                <!--group string="Group By"><filter name="by_responsible" string="Responsible" context="{'group_by': 'responsible_id'}"/></group-->
+            </search>
+        </field>
+    </record>
+    <!-- window action ///////////////////////////////////////////////////////////////////////////////-->
+    <record model="ir.actions.act_window" id="empresa_list_action">
+        <field name="name">Empresas</field>
+        <field name="res_model">empresa_inherit</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="context" eval="{}"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Agregar primer registro                </p>
+        </field>
+    </record>
+    <!-- top level menu: no parent //////////////////////////////////////////////////////////////////////////////////////-->
+    <menuitem id="empresa_model" name="Empresas"/>
+    <!--menuitem id="regresar_imputados" name="Tablero" parent="empresa_model" action="umc_list_action"/-->
+    <menuitem id="empresas_menu" name="Empresas" parent="empresa_model" action="empresa_list_action"/>
+</odoo>

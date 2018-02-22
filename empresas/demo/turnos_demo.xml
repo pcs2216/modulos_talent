@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="primer_turno_demo" model="ops4g.turno">
+			<field name="name">Matutino</field>
+			<field name="codigo">MT0001</field>
+			<field name="hora_inicio">08.00</field>
+			<field name="hora_finalizacion">14.00</field>
+		</record>
+		<record id="segundo_turno_demo" model="ops4g.turno">
+			<field name="name">Verpertino</field>
+			<field name="codigo">VS0001</field>
+			<field name="hora_inicio">14.00</field>
+			<field name="hora_finalizacion">20.00</field>
+		</record>
+	</data>
+</odoo>

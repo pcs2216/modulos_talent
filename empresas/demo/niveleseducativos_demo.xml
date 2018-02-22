@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="primero_niveleducativo_demo" model="ops4g.nivel">
+			<field name="name">Ingenieria</field>
+			<field name="codigo">ING</field>
+		</record>
+		<record id="segundo_niveleducativo_demo" model="ops4g.nivel">
+			<field name="name">Maestria</field>
+			<field name="codigo">MTRIA</field>
+		</record>
+		<record id="tercer_niveleducativo_demo" model="ops4g.nivel">
+			<field name="name">Licenciatura</field>
+			<field name="codigo">LIC</field>
+		</record>
+	</data>
+</odoo>

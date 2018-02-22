@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="primer_periodo_demo" model="ops4g.periodo">
+			<field name="name">Enero - Abril 2018</field>
+			<field name="codigo">ENAB18</field>
+			<field name="fecha_inicio">01/08/2018</field>
+			<field name="fecha_fin">04/08/2018</field>
+			<field name="ciclo">2018 - 2019</field>
+		</record>
+		<record id="segundo_periodo_demo" model="ops4g.periodo">
+			<field name="name">Mayo - Agosto 2018</field>
+			<field name="codigo">MAAG18</field>
+			<field name="fecha_inicio">05/05/2018</field>
+			<field name="fecha_fin">08/05/2018</field>
+			<field name="ciclo">2018 - 2019</field>
+		</record>
+		<record id="tercero_periodo_demo" model="ops4g.periodo">
+			<field name="name">Septiembre - Diciembre 2018</field>
+			<field name="codigo">SEDI18</field>
+			<field name="fecha_inicio">09/09/2018</field>
+			<field name="fecha_fin">12/12/2018</field>
+			<field name="ciclo">2018 - 2019</field>
+		</record>
+	</data>
+</odoo>

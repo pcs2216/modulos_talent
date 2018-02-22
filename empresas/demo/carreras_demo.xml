@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="primera_carrera_demo" model="ops4g.carrera">
+			<field name="name">Ingenieria de Software</field>
+			<field name="codigo">IS001</field>
+		</record>
+		<record id="segunda_carrera_demo" model="ops4g.carrera">
+			<field name="name">Microbiología</field>
+			<field name="codigo">MA0001</field>
+		</record>
+		<record id="tercera_carrera_demo" model="ops4g.carrera">
+			<field name="name">Contabilidad</field>
+			<field name="codigo">CD0001</field>
+		</record>
+	</data>
+</odoo>

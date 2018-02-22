@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="primer_area_demo" model="ops4g.area">
+		    <field name="name">Económico administrativa</field>
+		    <field name="codigo">EC001</field>
+		</record>
+		<record id="segunda_area_demo" model="ops4g.area">
+		    <field name="name">Ciencias de la salud</field>
+		    <field name="codigo">CS001</field>
+		</record>
+		<record id="tercer_area_demo" model="ops4g.area">
+		    <field name="name">Ciencias Naturales</field>
+		    <field name="codigo">CN001</field>
+		</record>
+	</data>
+</odoo>

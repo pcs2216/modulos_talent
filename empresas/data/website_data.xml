@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<!-- Lista blanca de campos -->
+		<function model="ir.model.fields" name="formbuilder_whitelist">
+            <value>crm.lead</value>
+            <value eval="[
+            	'name', 
+				
+            ]"/>
+        </function>
+	</data>
+</odoo>

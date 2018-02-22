@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="seq_consecutivo_cuatrimestres" model="ir.sequence">
+			<field name="name">consecutivo_cuatrimestre_automatico</field>
+			<field name="code">ops4g_cuatrimestre</field>
+			<field name="padding">4</field>
+			<field eval="1" name="number_increment"/>
+		</record>
+	</data>
+</odoo>

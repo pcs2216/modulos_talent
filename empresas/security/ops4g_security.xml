@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="access_group_manager" model="res.groups">
+			<field name="name">Administrador de Servicios Escolares</field>
+		</record>
+
+		<!-- Asignación de permisios Generales-->
+		<record id="acceso_areas" model="ir.rule"> 
+			<field name="name">Modificar areas</field>
+			<field name="model_id" ref="model_ops4g_area" />
+			<field name="groups" eval="[(4, ref('access_group_manager'))]" />
+		</record>
+
+		<record id="acceso_carreras" model="ir.rule">
+			<field name="name">Modificar carreras</field>
+			<field name="model_id" ref="model_ops4g_carrera"/>
+			<field name="groups" eval="[(4, ref('access_group_manager'))]" />
+		</record>
+
+		<record id="acceso_cuatrimestres" model="ir.rule">
+			<field name="name">Modificar cuatrimestres</field>
+			<field name="model_id" ref="model_ops4g_periodo"/>
+			<field name="groups" eval="[(4, ref('access_group_manager'))]" />
+		</record>
+		
+		<record id="acceso_facultades" model="ir.rule">
+			<field name="name">Modificar facultades</field>
+			<field name="model_id" ref="model_ops4g_facultad"/>
+			<field name="groups" eval="[(4, ref('access_group_manager'))]" />
+		</record>
+		
+		<record id="acceso_niveles_educativos" model="ir.rule">
+			<field name="name">Niveles educativos</field>
+			<field name="model_id" ref="model_ops4g_nivel"/>
+			<field name="groups" eval="[(4, ref('access_group_manager'))]" />
+		</record>
+
+		<record id="acceso_planes_estudios" model="ir.rule">
+			<field name="name">Modificar planes de estudio</field>
+			<field name="model_id" ref="model_ops4g_planestudios"/>
+			<field name="groups" eval="[(4, ref('access_group_manager'))]" />
+		</record>
+
+	</data>
+</odoo>
