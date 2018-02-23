@@ -3,8 +3,8 @@ from odoo import api, fields, models
 
 
 class Empresas_inherit(models.Model):
-    _name="empresa_inherit"
-    #_inherit = 'mail.thread'
+    _name='empresa_inherit'
+    #_inherit = 'crm.lead'
 
     
     name = fields.Char(

@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 	<data>
+		<record id="crm.model_res_partner" model="ir.model">
+			<field name="website_form_default_field_id" ref="base.field_res_partner_name" />
+			<field name="website_form_access">True</field>
+			<field name="website_form_label">Registrar Contacto</field>
+		</record>
 		<!-- Lista blanca de campos -->
 		<function model="ir.model.fields" name="formbuilder_whitelist">
-            <value>crm.lead</value>
-            <value eval="[
-            	'name', 
-				
-            ]"/>
-        </function>
+			<value>res.partner</value>
+			<value eval="[            	
+			'name',
+			'email',
+			'company_type',
+			'phone',
+			'state_id',
+			
+			]"/>
+		</function>
 	</data>
 </odoo>
